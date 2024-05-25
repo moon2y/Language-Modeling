@@ -8,7 +8,7 @@ Character-Level Language Models(Karphthy's article)
 - `main.py`: 모델 학습 & 테스트 + 샘플 생성
 - `dataset.py`: shakespeare_train.txt 데이터셋 전처리
 - `model.py`: vanilla RNN & LSTM 모델 구현
-- generate.py : 학습된 모델로 샘플 생성
+- 'generate.py' : 학습된 모델로 샘플 생성
 
 ## 모델 설명
 ### vanilla RNN
@@ -44,6 +44,10 @@ Character-Level Language Models(Karphthy's article)
 | vanilla RNN        | 0.9878      | 0.8759       |
 | LSTM               | 0.5632      | 0.5028       |
 
+### 정리
+- In terms of loss values for validation dataset LSTM is superior to vanilla RNN(LSTM is expected to have better language generation performance)
+- Stacking 4 Layers has better results for both vanilla RNN and LSTM
+- Stacking 4 Layers has better results in both Train and Test dataset
 
 ## LSTM 생성 결과
 ### Hyper Parameters
@@ -203,3 +207,13 @@ Character-Level Language Models(Karphthy's article)
     Madam, even, good Servingman: would all wind of sovereigntaly?
     MENENIUS:
     I
+    
+### what difference the temperature makes and why it helps to generate more plausible results
+- Balancing Predictability and Creativity:
+  Lowering T (e.g., 0.5) makes the model's predictions more confident and deterministic, which can improve coherence but may reduce diversity.
+  Raising T (e.g., 1.5) increases diversity by making the probability distribution more uniform, allowing for more creative and less predictable sequences.          However, too high a temperature may result in incoherent text.
+- Adjusting for Context:
+  Different contexts may require different levels of creativity and coherence. For example, dialogue generation might benefit from a slightly higher temperature     to produce varied and interesting responses, while factual text generation might require a lower temperature to maintain accuracy and coherence.
+- Avoiding Local Minima:
+  Without temperature adjustment, the model might get stuck in local minima, producing repetitive or overly common phrases. Adjusting the temperature helps in       exploring a wider range of possible sequences.
+  
