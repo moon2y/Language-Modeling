@@ -24,7 +24,7 @@ Character-Level Language Models(Karphthy's article)
 - n_layers -> 2 or 4
 - learning_rate = 0.001
 - n_epochs = 10
-- 
+  
 ### n_layer = 2
 ![nl2](https://github.com/moon2y/Language-Modeling/assets/88147264/e4b62065-867f-4e32-9476-2fa83a1b3b99)
 
