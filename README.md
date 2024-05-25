@@ -17,7 +17,7 @@ Character-Level Language Models(Karphthy's article)
 ### LSTM
 ![lstm](https://github.com/moon2y/Language-Modeling/assets/88147264/1a569403-7ef5-4f4d-9922-adc1f1a3939e)
 
-## 학결과
+## 학습결과
 ### Hyper Parameters
 - batch_size = 64
 - hidden_size = 256
@@ -43,6 +43,7 @@ Character-Level Language Models(Karphthy's article)
 |--------------------|-------------|--------------|
 | vanilla RNN        | 0.9878      | 0.8759       |
 | LSTM               | 0.5632      | 0.5028       |
+
 
 ## LSTM 생성 결과
 ### Hyper Parameters
@@ -111,7 +112,6 @@ Character-Level Language Models(Karphthy's article)
   - (Temperature 1.5):
     JULIET:
     What, my Lord of Derby?
-    
     DERY:
     You must not deal upon us
     His in the wars wifely:
