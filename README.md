@@ -12,10 +12,10 @@ Character-Level Language Models(Karphthy's article)
 
 ## 모델 설명
 ### vanilla RNN
-!(https://github.com/moon2y/Language-Modeling/blob/main/plot&image/vanilla_rnn.png)
+![vanilla_rnn](https://github.com/moon2y/Language-Modeling/assets/88147264/25119bf3-7b9b-448c-bd08-0bff064a525b)
 
 ### LSTM
-!(https://github.com/moon2y/Language-Modeling/blob/main/plot&image/vanilla_rnn.png)
+![lstm](https://github.com/moon2y/Language-Modeling/assets/88147264/1a569403-7ef5-4f4d-9922-adc1f1a3939e)
 
 ## 학결과
 ### Hyper Parameters
@@ -26,23 +26,23 @@ Character-Level Language Models(Karphthy's article)
 - n_epochs = 10
 - 
 ### n_layer = 2
-!(https://github.com/moon2y/Language-Modeling/blob/main/plot&image/nl2.png?raw=true)
+![nl2](https://github.com/moon2y/Language-Modeling/assets/88147264/e4b62065-867f-4e32-9476-2fa83a1b3b99)
 
 
 ### n_layer = 4
-!(https://github.com/moon2y/Language-Modeling/blob/main/plot&image/nl4.png?raw=true)
+![nl4](https://github.com/moon2y/Language-Modeling/assets/88147264/59cf8452-8f47-4d4d-af10-17f94b23a782)
 
 ### Train Loss
 |                    | n_layer = 2 | n_layer = 4  |
 |--------------------|-------------|--------------|
-| vanilla RNN        | 0.125       | 0.977        |
-| LSTM               | 0.115       | 0.981        |
+| vanilla RNN        | 0.9663      | 0.8519       |
+| LSTM               | 0.5309      | 0.4713       |
 
 ### Test Loss
 |                    | n_layer = 2 | n_layer = 4  |
 |--------------------|-------------|--------------|
-| vanilla RNN        | 0.125       | 0.977        |
-| LSTM               | 0.115       | 0.981        |
+| vanilla RNN        | 0.9878      | 0.8759       |
+| LSTM               | 0.5632      | 0.5028       |
 
 ## LSTM 생성 결과
 ### Hyper Parameters
@@ -197,7 +197,7 @@ Character-Level Language Models(Karphthy's article)
     Here, Hastings;
     When they account his head and
     though their heart to send you have deserved the pla
-    - (Temperature 1.5):
+  - (Temperature 1.5):
     MACBETH:
     Pitcher court together;
     Madam, even, good Servingman: would all wind of sovereigntaly?
